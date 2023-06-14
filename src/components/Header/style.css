@@ -1,0 +1,123 @@
+/* Header */
+.header {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--header-bg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    color: var(--header-text);
+}
+
+.header__wrapper {
+    max-width: 660px;
+    text-transform: uppercase;
+}
+/*header title*/
+.header__title {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 10px;
+
+}
+.ellipse2:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index:-1;
+    background: var(--accent1);
+}
+/*subtitles*/
+.header__text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.333;
+    position: relative;
+    z-index: 3;
+    font-weight: 600;
+}
+.ellipse1:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    z-index: -1;
+}
+.header__text p + p {
+    margin-top: 0.5em;
+}
+
+
+/*typing text*/
+
+@media (max-width: 768px) {
+    /* Header  */
+
+    .header {
+        min-height: unset;
+        width: 100%;
+    }
+    .ellipse1:after{
+        width: 30px;
+        height: 30px;
+        top: -5px;
+    }
+    .ellipse2:after {
+        width: 40px;
+        height: 40px;
+        top: 15px;
+    }
+
+    .header__title {
+        font-size: 50px;
+    }
+
+}
+@media (max-width: 650px){
+    .header__title{
+        font-size: 35px;
+    }
+}
+@media (max-width: 360px){
+    .header {
+        min-height: unset;
+        padding: 5px;
+    }
+    .ellipse1:after{
+        width: 20px;
+        height: 20px;
+        top: 2px;
+    }
+    .ellipse2:after {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__title {
+        font-size: 25px;
+        margin: 0
+    }
+    .header__text{
+        margin: 5px 0;
+    }
+}
+
+
+
+

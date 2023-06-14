@@ -1,0 +1,60 @@
+:root{
+    --fz: 46px;
+    --lh: calc(var(--fz)*1.4);
+    --slide: calc(var(--lh)*-4);
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper, .static-txt {
+    color: var(--header-text);
+    font-size: var(--fz);
+    font-weight: 400;
+}
+
+
+.wrapper .dynamic-txts {
+    line-height: var(--lh);
+    height: var(--lh);
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+
+    list-style: none;
+    color: var(--header-text);
+    font-size: var(--fz);
+    top: 0;
+    font-weight: 500;
+    position: relative;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide  {
+   100%{
+       top: var(--slide);
+   }
+}
+.dynamic-txts li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid var(--header-text);
+    animation: typing 3s steps(10) infinite;
+    background: var(--header-bg);
+}
+
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px)
+    }
+    100% {
+        left: 0;
+    }
+}
