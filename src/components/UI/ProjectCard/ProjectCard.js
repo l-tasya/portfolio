@@ -42,7 +42,7 @@ const Card = styled.div`
 const ProjectCard = ({title, img, id, subTitle}) => {
     return (
         <li>
-            <NavLink to={`/project/${id}`}>
+            <NavLink to={`/portfolio/project/${id}`}>
                 <Card>
                     <img src={img} alt="ProjectCard img"/>
                     <h5>{title}</h5>

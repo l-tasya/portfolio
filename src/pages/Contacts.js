@@ -43,7 +43,9 @@ const Contacts = () => {
         <>
             <main className="main">
                 <aside>
-                    1
+                    <div className={'aside__title'}>
+                        <span>Contact Me</span>
+                    </div>
                 </aside>
                 <section>
                     <header>

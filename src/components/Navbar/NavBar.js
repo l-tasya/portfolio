@@ -19,21 +19,21 @@ const NavBar = () => {
                     <ul className="nav-list">
 
                         <li className="nav-list__item">
-                            <NavLink to={'/'} className={isActiveCallback}>Home</NavLink>
+                            <NavLink to={'/portfolio/'} className={isActiveCallback}>Home</NavLink>
                         </li>
 
                         <li className="nav-list__item">
-                            <NavLink to={'/about'} className={isActiveCallback}>About</NavLink>
+                            <NavLink to={'/portfolio/about'} className={isActiveCallback}>About</NavLink>
                         </li>
 
                         <li className="nav-list__item">
-                            <NavLink to={'/projects'} className={isActiveCallback}>
+                            <NavLink to={'/portfolio/projects'} className={isActiveCallback}>
                                 Projects
                             </NavLink>
                         </li>
 
                         <li className="nav-list__item">
-                            <NavLink to={'/contacts'} className={isActiveCallback}>
+                            <NavLink to={'/portfolio/contacts'} className={isActiveCallback}>
                                 Contacts
                             </NavLink>
                         </li>

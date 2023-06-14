@@ -10,7 +10,9 @@ const About = () => {
     return (
         <main className="main">
             <aside>
-
+                <div className={'aside__title'}>
+                    <span>About</span>
+                </div>
             </aside>
             <section className={'about'}>
                 <header>

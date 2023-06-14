@@ -1,13 +1,14 @@
 import React from 'react';
 import ProjectCard from "../../components/UI/ProjectCard/ProjectCard";
 import {projects} from "../../helpers/projectList";
-import muiIMG from "../../img/icons/skills/material-ui-svgrepo-com.svg";
 
 const Projects = () => {
     return (
         <main className="main">
             <aside>
-                <img src={muiIMG} alt=""/>
+                <div className={'aside__title'}>
+                    <span>Projects</span>
+                </div>
             </aside>
             <section>
                 <header>

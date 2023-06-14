@@ -12,13 +12,14 @@ import ScrollToTop from "./utils/ScrollToTop";
 import About from "./pages/About/About";
 import { motion } from "framer-motion";
 
-
 const pageVariants = {
     initial: {
         opacity: 0
     },
     in: {
-        opacity: 1
+        opacity: 1,
+        display: 'flex',
+        flexGrow: 1,
     },
     out: {
         opacity: 0
@@ -53,17 +54,19 @@ function App() {
         <div className="App">
             <ScrollToTop/>
             <NavBar/>
-            <Routes>
 
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/about' element={<About/>}/>
-                    <Route path='/projects' element={<Projects/>}/>
-                    <Route path='/contacts' element={<Contacts/>}/>
-                    <Route path='/project/:projectID' element={<Project/>}/>
+            <Routes>
+                <Route element={<AnimationLayout />}>
+                    <Route path='/portfolio/' element={<Home/>}/>
+                    <Route path='/portfolio/about' element={<About/>}/>
+                    <Route path='/portfolio/projects' element={<Projects/>}/>
+                    <Route path='/portfolio/contacts' element={<Contacts/>}/>
+                    <Route path='/portfolio/project/:projectID' element={<Project/>}/>
                     <Route path='*'
                            element={<div className="header__wrapper"><h1 className="header__title">404. Page Not
                                Found</h1>
                            </div>}/>
+                </Route>
             </Routes>
 
             <Footer/>
