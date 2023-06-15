@@ -2,7 +2,6 @@ import React from 'react';
 import {projects} from "../../helpers/projectList";
 import GithubButton from "../../components/UI/GithubButton/GithubButton";
 import {useParams} from "react-router-dom";
-import muiIMG from "../../img/icons/skills/material-ui-svgrepo-com.svg";
 import styled from "styled-components";
 
 const Image = styled.div`
@@ -16,21 +15,24 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   grid-gap: 20px;
-  article{
+
+  article {
     min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    ul{
-      li{
+
+    ul {
+      li {
         position: relative;
         padding-left: 10px;
         font-size: 20px;
         display: flex;
         color: var(--text-color);
         align-items: center;
-        &:before{
+
+        &:before {
           position: absolute;
           content: '';
           width: 5px;
@@ -42,7 +44,8 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media(max-width: 955px){
+
+  @media (max-width: 955px) {
     flex-direction: column;
     justify-content: center;
   }
@@ -54,7 +57,9 @@ const Project = () => {
     return (
         <main className="main">
             <aside>
-                <img src={muiIMG} alt=""/>
+                <div className={'aside__title'}>
+                    <span>{project.title}</span>
+                </div>
             </aside>
             <section className={'about'}>
                 <header>
@@ -68,9 +73,9 @@ const Project = () => {
                     <article>
                         <GithubButton link={project.ghLink}/>
                         <ul>
-                        {
-                            project.skills.map(t=><li>{t}</li>)
-                        }
+                            {
+                                project.skills.map(t => <li>{t}</li>)
+                            }
                         </ul>
                     </article>
                 </Wrapper>

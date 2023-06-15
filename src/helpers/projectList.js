@@ -11,7 +11,7 @@ export const projects = [
         id: 1,
         title: "TodoList",
         description: '...',
-        skills: ['React','Redux Toolkit', 'Material UI', 'StoryBook'],
+        skills: ['React','Redux Toolkit', 'TypeScript', 'Styled Components','axios', 'Material UI', 'StoryBook', 'RestAPI', 'Authorization', ],
         img: {
             small: project01,
             big: project01Big,
@@ -20,9 +20,9 @@ export const projects = [
     },
     {
         id: 2,
-        title: "SN",
+        title: "Social Network",
         description: '...',
-        skills: ['React','Redux', 'React Router Dom v6','Styled Components'],
+        skills: ['React','Redux', 'TypeScript', 'React Router Dom v6','Styled Components'],
         img: {
             small: project02,
             big: project02Big,

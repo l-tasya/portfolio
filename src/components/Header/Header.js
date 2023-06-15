@@ -12,7 +12,7 @@ const Header = () => {
                 <h1 className="header__title ellipse2">i'm Nursain Temirtas</h1>
                 <h6 className="header__text skills">
                     <TextTyping fontSize={15} items={items}/></h6>
-               <Button variant={'primary'} link={'youtube.com'}>Download CV</Button>
+               <Button variant={'primary'} download={true}>Download CV</Button>
             </div>
         </header>
     );

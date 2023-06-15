@@ -35,7 +35,7 @@ const About = () => {
                             )}
                         </div>
                         <br/>
-                        <Button variant={'primary'}>Download CV</Button>
+                        <Button variant={'primary'} download={true}>Download CV</Button>
                     </div>
                 </div>
             </section>

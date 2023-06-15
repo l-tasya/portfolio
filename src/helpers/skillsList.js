@@ -8,8 +8,9 @@ import tsIMG from '../img/icons/skills/typescript-svgrepo-com.svg'
 import storybookIMG from '../img/icons/skills/storybook-icon-svgrepo-com.svg';
 import muiIMG from '../img/icons/skills/material-ui-svgrepo-com.svg';
 import unitTestIMG from '../img/icons/skills/test-tube-6-svgrepo-com.svg';
-import apollo from '../img/icons/skills/brand-graphql-svgrepo-com.svg'
-
+import apollo from '../img/icons/skills/brand-graphql-svgrepo-com.svg';
+import restAPI from '../img/icons/skills/rest-api-icon.svg';
+import axios from '../img/icons/skills/axios-icon.svg';
 
 export const skills = [
     {
@@ -17,7 +18,7 @@ export const skills = [
         img: reactIMG,
     },
     {
-        title: 'Redux',
+        title: 'Redux Toolkit',
         img: reduxIMG,
     },
     {
@@ -60,5 +61,13 @@ export const skills = [
     {
         title: 'Postman',
         img: postman,
+    },
+    {
+        title: 'RestAPI',
+        img:restAPI
+    },
+    {
+        title: 'Axios',
+        img:axios,
     }
 ]
